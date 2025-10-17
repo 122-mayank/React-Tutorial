@@ -1,0 +1,9 @@
+#ip_filter{
+     height: 40px;
+      width: 250px;
+      border-radius: 10px;   
+      outline: auto;  
+}
+label{
+     font-weight: 600;
+}
