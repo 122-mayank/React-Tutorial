@@ -1,0 +1,14 @@
+.kg-item{
+     background-color: #F09562;
+     display: inline;
+}
+.kg-span{
+      font-weight: 600;
+      color: blue
+}
+.button{
+       margin-left: 10px;
+       border-radius: 10px;
+       background-color: #F76545;
+       border: none;
+}
