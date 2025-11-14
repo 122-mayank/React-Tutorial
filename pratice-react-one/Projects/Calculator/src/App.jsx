@@ -5,7 +5,7 @@ import ButtonsContainer from "./components/ButtonsContainer";
 
 function App() {
 
- const [calval , setcalval] = useState("45");
+ const [calval , setcalval] = useState(" ");
 const onButtonClick =(buttonText)=>{
      if(buttonText === 'C'){
            setcalval("");
