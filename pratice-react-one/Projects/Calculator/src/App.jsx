@@ -1,16 +1,34 @@
-import './App.css'
-import Calculator from './components/calculator';
+import { useState } from 'react';
+import styles from './App.module.css'
+import Display from "./components/Display";
+import ButtonsContainer from "./components/ButtonsContainer";
 
 function App() {
 
-  let operands = ['+ ','- ','% ','/ ','* '];
+ const [calval , setcalval] = useState("45");
+const onButtonClick =(buttonText)=>{
+     if(buttonText === 'C'){
+           setcalval("");
+     }
+     else if(buttonText === '='){
+          const result = eval(calval);
+          setcalval(result);
+     }
+
+     else{
+
+      const newValue = calval + buttonText;
+      setcalval(newValue);
+     }
+}
+
 
   return (
     <>
-       <Calculator operands ={operands}>
-            <h1>Welcome to my App</h1>
-            <p>This content is passed as children to the Container component.</p>
-       </Calculator>
+         <div className={styles.Calculator}>
+          <Display calval = {calval}></Display>
+         <ButtonsContainer onButtonClick={onButtonClick}></ButtonsContainer>
+         </div>
     </>
   )
 }

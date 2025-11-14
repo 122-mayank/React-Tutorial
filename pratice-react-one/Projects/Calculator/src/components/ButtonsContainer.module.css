@@ -1,0 +1,53 @@
+.container {
+    /* margin-left: 20px; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 4 buttons per row */
+  gap: 12px;
+  padding: 20px;
+  max-width: 320px;
+  /* margin: 0 auto; */
+  background: #1e1e2f;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Styling for buttons */
+.box {
+  background: linear-gradient(145deg, #2a2a3d, #1a1a28);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: 18px 0;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 0 #111, 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Hover and active effects */
+.box:hover {
+  background: linear-gradient(145deg, #3b3b5a, #29293f);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(255, 255, 255, 0.1);
+}
+
+.box:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+  .container {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 260px;
+    padding: 15px;
+  }
+
+  .box {
+    font-size: 1rem;
+    padding: 14px 0;
+  }
+}
