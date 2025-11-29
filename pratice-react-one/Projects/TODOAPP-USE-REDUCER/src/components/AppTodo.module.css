@@ -1,0 +1,40 @@
+
+.container{
+     display: flex;
+     flex-direction: row;
+     gap:10px;
+     width: 80%;
+     padding:20px;
+     margin-left:25em;
+     margin-top: 20px;
+}
+
+.inptxt{
+
+     text-align: center;
+     height: 50px;
+     width:200px;
+     border-radius: 10px;
+
+}
+#btn{
+     height: 50px;
+     width:100px;
+     border-radius: 10px;
+     background-color: rgba(69, 69, 202, 0.521);
+     color: white;
+}
+.date{
+     border-radius: 10px;
+     padding:10px;
+}
+
+@media(max-width:450px){
+      .container{
+        margin-left: 0em;
+        width:60%;
+      }
+      #btn{
+         width:120px;
+      }
+}
